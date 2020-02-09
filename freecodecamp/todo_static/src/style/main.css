@@ -1,0 +1,19 @@
+body {
+  background-color: lightgray;
+}
+
+.todo {
+  margin: 0 auto;
+  width: 800px;
+  background-color: #fdf6e3;
+  box-shadow: 5px 5px 5px black;
+}
+
+.todo-item {
+  padding: 0.2em;
+  margin: 0.2em;
+}
+
+.todo-item input {
+  margin-right: 0.5em;
+}

@@ -1,0 +1,20 @@
+body {
+  margin: auto;
+  padding: 1em;
+  width: 800px;
+}
+
+.joke {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.joke-question {
+  padding: 1em;
+  background-color: #F7D4D4;
+}
+
+.joke-answer {
+  padding: 1em;
+  background-color: #E1BBBB;
+}

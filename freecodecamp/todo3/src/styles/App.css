@@ -1,0 +1,17 @@
+div.todo {
+  margin: 0 auto;
+  width: 800px;
+}
+
+span.todo-item-checkbox {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+span.todo-item-name {
+  width: 700px;
+}
+
+span[data-complete="true"] {
+  text-decoration: line-through;
+}

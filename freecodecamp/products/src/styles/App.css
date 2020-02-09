@@ -1,0 +1,27 @@
+.app {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.product {
+  font-family: "Gill Sans", sans-serif;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.product-description {
+  margin-bottom: 1em;
+}
+
+.product-price {
+  color: red;
+}
+
+.product-review {
+  background-color: lightpink;
+  padding: 0.2em;
+}
+
+.product-review-name {
+  font-weight: bold;
+}
