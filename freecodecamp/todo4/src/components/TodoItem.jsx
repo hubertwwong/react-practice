@@ -3,8 +3,8 @@ import React from 'react';
 function TodoItem(props) {
   return (
     <div>
-      <input type="checkbox" checked={props.checked} onChange={() => {props.handleClick(props.id)}}/>
-      <div>{props.note}</div>
+      <input type="checkbox" checked={props.item.checked} onChange={() => {props.handleClick(props.item.id)}}/>
+      <div>{props.item.note}</div>
     </div>
   );
 }

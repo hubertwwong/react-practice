@@ -7,41 +7,43 @@ class Todo extends React.Component {
   constructor() {
     super();
     this.state = {
-      todos: todoData,
-      test: "testingIfThisGetsBlownoutOnSetState"
+      notes: todoData
     }
   }
 
-  handleClick = (id) => {
+  onClick = (id) => {
     this.setState(prevState => {
-      const todos = prevState.todos.map(t => {
+      const notes = prevState.notes.map(t => {
         if (parseInt(t.id) === parseInt(id)) {
           t.checked = !t.checked;
         }
         return t;
       });
-      
-      // Have to return it.
+
       return {
-        todos
-      }
+        notes
+      };
     });
   }
 
   renderTodoItems() {
-    return todoData.map(td => 
-      <TodoItem 
-        key={td.id}
-        item={td}
-        handleClick={this.handleClick}/>);
+    return todoData.map(
+      item => <TodoItem 
+                key={item.id} 
+                item={item} 
+                handleClick={this.onClick} 
+                />
+      );
   }
 
   render() {
+    
+
     return (
-      <div>
+      <div className="todo">
         {this.renderTodoItems()}
       </div>
-    );
+    )
   }
 }
 
