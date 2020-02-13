@@ -3,8 +3,57 @@
 A place to practice the free code camp video assigment.
 
 
-
 ## Unsorted notes
+
+#### Smart vs dumb components
+
+1. Smart ones have state.
+2. Dumb ones don't.
+3. Dumb components should be functional.
+4. One easy way to pass state from smart to dumb is to pass the whole thing down as a data prop.
+
+
+```
+<smart data={props.state}/>
+```
+
+```
+<dumb>
+  {props.data}
+</dumb>
+```
+
+#### Forms
+
+TextArea in react is like text field input.
+1. Single vs. Double tag. `<textarea name="blah" />`
+
+checkbox
+1. has a check property.
+2. You want to set state to the checked property.
+3. This is the thing you have to do.
+
+Values need onChange property.
+1. You want one handle change method for all form fields.
+
+You can pull the type of the form.
+`event.target.type`
+
+radios
+1. have a list of checkbox. 
+
+select box
+1. Use the value property to figure what is chosen.
+
+Formik...
+1. react tool for better forms.
+
+Submitting form
+1. Multiple ways.
+2. `<input type="submit">`
+3. Buttons in form tags are considered submit. You can add the handler either on the button on the form tag
+4. Preference on the form tag. 
+
 
 #### State
 
