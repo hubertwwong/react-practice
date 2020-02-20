@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+todo-item {
+  margin: 0;
+  padding: 0;
+}
+
+.note-complete {
+  text-decoration: line-through;
+}
+
+@media (max-width: 320px) {
+  .todo-add-note {
+    display: flex;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .todo-add-note input {
+    flex: 1;
+  }
+
+  .todo-items-row {
+    display: flex;
+  }
+
+  .todo-items-row input {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .todo-items-row span {
+    flex: 1;
+  }
+}
+
+@media (min-width: 321px) {
+  .todo {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .todo-add-note {
+    display: flex;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .todo-add-note input {
+    flex: 1
+  }
+
+  .todo-items-row {
+    display: flex;
+  }
+
+  .todo-items-row input {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .todo-items-row span {
+    flex: 1;
+  }
+}
